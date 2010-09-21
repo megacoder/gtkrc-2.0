@@ -1,0 +1,11 @@
+style "scrollbar-arrows" {
+    GtkScrollbar::has-backward-stepper = 1           # top - up arrow
+    GtkScrollbar::has-secondary-forward-stepper = 0  # top - down arrow
+    GtkScrollbar::has-forward-stepper = 1            # bottom - down arrow
+    GtkScrollbar::has-secondary-backward-stepper = 1 # bottom - up arrow
+    GtkScrolledWindow::window_placement = top-right
+}
+
+class "GtkScrollbar"  style "scrollbar-arrows"
+
+gtk-can-change-accels = 1
